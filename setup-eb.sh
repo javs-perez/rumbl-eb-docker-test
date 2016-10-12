@@ -1,11 +1,11 @@
 set -x
 set -e
 
-mkdir $HOME/.aws
-touch $HOME/.aws/config
-chmod 600 $HOME/.aws/config
-echo "[profile eb-cli]" > $HOME/.aws/config
-echo "aws_access_key_id=$AWS_ACCESS_KEY_ID" >> $HOME/.aws/config
-echo "aws_secret_access_key=$AWS_SECRET_ACCESS_KEY" >> $HOME/.aws/config
-echo "[default]" > $HOME/.aws/config
-echo "region = us-east-1" > $HOME/.aws/config
+mkdir /home/ubuntu/.aws
+touch /home/ubuntu/.aws/config
+chmod 600 /home/ubuntu/.aws/config
+echo "[profile eb-cli]" > /home/ubuntu/.aws/config
+echo "aws_access_key_id=$AWS_ACCESS_KEY_ID" >> /home/ubuntu/.aws/config
+echo "aws_secret_access_key=$AWS_SECRET_ACCESS_KEY" >> /home/ubuntu/.aws/config
+echo "[default]" > /home/ubuntu/.aws/config
+echo "region = us-east-1" > /home/ubuntu/.aws/config
