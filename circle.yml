@@ -18,4 +18,5 @@ deployment:
     branch: master
     commands:
       - bash ./setup-eb.sh
+      - eb init rumbl -r us-east-1
       - eb deploy rumbl-dev
