@@ -1,0 +1,10 @@
+branch-defaults:
+  master:
+    environment: rumbl-dev
+global:
+  application_name: rumbl
+  default_ec2_keyname: aws_new_key_pair
+  default_platform: 64bit Amazon Linux 2016.03 v2.1.6 running Docker 1.11.2
+  default_region: us-east-1
+  profile: eb-cli
+  sc: git
