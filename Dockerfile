@@ -36,4 +36,5 @@ RUN MIX_ENV=prod mix phoenix.digest
 EXPOSE 4000
 
 # The command to run when this image starts up
-CMD MIX_ENV=prod mix phoenix.server
+CMD MIX_ENV=prod mix ecto.migrate && \
+  MIX_ENV=prod mix phoenix.server
