@@ -1,5 +1,6 @@
 dependencies:
   pre:
+    - sudo pip install awsebcli
     - ./bin-ci-prepare.sh
   cache_directories:
     - ~/dependencies
@@ -10,3 +11,10 @@ dependencies:
 test:
   override:
     - ./bin-ci-test.sh
+
+deployment:
+  staging:
+    branch: master
+    commands:
+      - bash ./setup-eb.sh
+      - eb deploy
